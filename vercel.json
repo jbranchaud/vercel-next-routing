@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    { "source": "/colors/blue", "destination": "/colors/red" },
+    { "source": "/colors/:color", "destination": "/colours/:color" },
+    { "source": "/jbranchaud", "destination": "https://joshbranchaud.com" },
+    {
+      "source": "/jbranchaud/blog/:title",
+      "destination": "https://joshbranchaud.com/blog/:title"
+    }
+  ],
+  "rewrites": [
+    { "source": "/blogs/one", "destination": "/blogs/two" },
+    { "source": "/blogs/:title", "destination": "/articles/:title" },
+    { "source": "/til", "destination": "https://github.com/jbranchaud/til" },
+    {
+      "source": "/til/:topic",
+      "destination": "https://github.com/jbranchaud/til"
+    },
+    {
+      "source": "/til-dir/:topic",
+      "destination": "https://github.com/jbranchaud/til/tree/master/:topic"
+    }
+  ]
+}
