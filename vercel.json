@@ -10,7 +10,13 @@
     {
       "source": "/jbranchaud/blog/:all*",
       "destination": "https://joshbranchaud.com/blog-all/:all*"
-    }
+    },
+    { "handle": "filesystem" },
+    {
+      "source": "/proxy/(.*)",
+      "destination": "https://joshbranchaud.com/proxy-thing/$1"
+    },
+    { "source": "/(.*)", "destination": "https://joshbranchaud.com/$1" }
   ],
   "rewrites": [
     { "source": "/blogs/one", "destination": "/blogs/two" },
