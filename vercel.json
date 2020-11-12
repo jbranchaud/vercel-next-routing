@@ -6,7 +6,12 @@
     {
       "source": "/jbranchaud/blog/:title",
       "destination": "https://joshbranchaud.com/blog/:title"
-    }
+    },
+    {
+      "source": "/proxy/(.*)",
+      "destination": "https://joshbranchaud.com/proxy-thing/$1"
+    },
+    { "source": "/(.*)", "destination": "https://joshbranchaud.com/$1" }
   ],
   "rewrites": [
     { "source": "/blogs/one", "destination": "/blogs/two" },
